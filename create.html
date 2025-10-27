@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Sets the language of the document to English -->
+<head>
+    <meta charset="UTF-8" /> <!-- Sets character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+    
+    <title>𝐖𝐫𝐚𝐩 𝐚 𝐌𝐞𝐬𝐬𝐚𝐠𝐞</title> <!-- Page Title in browser tab -->
+
+    <!-- Website Icon (favicon) -->
+    <link rel='Shortcut Icon' type='image/x-icon' href='assets/graphics/common/title_logo.png'>
+
+    <!-- Bootstrap CSS for UI styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons for icon support -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/create.css">
+
+    <!-- SweetAlert CSS for popup messages -->
+    <link rel="stylesheet" href="assets/vendor/sweetalert.min.css">
+</head>
+
+<body class="background"> <!-- Main Body with custom class for background -->
+
+    <!-- Hidden canvas image used for steganography operations -->
+    <img id="canvas" style="display:none; position:absolute; top:0px;"/>  
+
+    <!-- Header section with graphic heading text -->
+    <div id="header">
+        <img id="headingImg" src="assets/graphics/create_page/heading.png" alt="Wrap a Message"/> 
+    </div>
+
+    <!-- Page Main Body wrapper -->
+    <div id="body">
+        <div class="card-container"> <!-- Holds the main card -->
+            
+            <div class="card"> <!-- The UI card element -->
+
+                <!-- Left side animation image (Gift/Wrap animation) -->
+                <img src="assets/graphics/common/create.gif" alt="Card Image">
+
+                <!-- Content section inside the card -->
+                <div class="card-content">
+
+                    <!-- Navigation steps bar -->
+                    <div class="steps-nav">
+                        <!-- Step 1 Button -->
+                        <button id="step1" class="step-button" data-step-number="1" data-step-name="Info 📃" onclick="showStep(1)">1</button>
+                        <!-- Step 2 Button -->
+                        <button id="step2" class="step-button" data-step-number="2" data-step-name="Pass 🔐" onclick="showStep(2)">2</button>
+                        <!-- Step 3 Button -->
+                        <button id="step3" class="step-button" data-step-number="3" data-step-name="Load 🖼️" onclick="showStep(3)">3</button>
+                    </div>
+                
+                    <!-- STEP 1 CONTENT: Enter Message -->
+                    <div id="content1" class="step-content">
+                        <textarea id="message" rows="8" placeholder="Enter your message"></textarea> <!-- User enters secret message -->
+                        <button class="btn prev-btn" onclick="home(1)">Home 🏡</button> <!-- Back to Home -->
+                        <button class="btn nxt-btn" onclick="showStep(2)">Wrap <i class="bi bi-arrow-right-circle"></i></button> <!-- Go to Step 2 -->
+                    </div>
+
+                    <!-- STEP 2 CONTENT: Enter Secret Code -->
+                    <div id="content2" class="step-content active">
+                        <img class="secret-code-image" src="assets/graphics/create_page/lock.png" alt="Secret code image"> <!-- Lock Image -->
+                        <input id="key" type="number" placeholder="Enter your secret code"> <!-- User enters password to encode -->
+                        <button class="btn prev-btn" onclick="showStep(1)"><i class="bi bi-arrow-left-circle"></i> Info 📃</button> <!-- Back to Step 1 -->
+                        <button class="btn nxt-btn" onclick="showStep(3)">Tie <i class="bi bi-arrow-right-circle"></i></button> <!-- Proceed to Step 3 -->
+                    </div>
+
+                    <!-- STEP 3 CONTENT: Upload Image to Hide Message -->
+                    <div id="content3" class="step-content">
+                        <div class="upload-box" id="uploadBox"> <!-- Drag & drop or select image -->
+                            <p>Drag & Drop your picture here or click to select</p>
+                            <input type="file" id="upload" class="upload-input" accept="image/*"> <!-- Upload input -->
+                        </div>
+
+                        <button class="btn prev-btn" onclick="showStep(2)"><i class="bi bi-arrow-left-circle"></i> Pass 🔐</button> <!-- Back to Step 2 -->
+                        <button class="btn nxt-btn" onclick="generate()">Generate 🎁</button> <!-- Generate final encoded image -->
+                    </div>
+
+                </div> <!-- End of card-content -->
+
+            </div> <!-- End of card -->
+
+        </div> <!-- End card-container -->
+
+    </div> <!-- End body wrapper -->
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with ❤️ by <a href="#" onclick="mypage()">𝐁𝐨𝐝𝐝𝐞𝐝𝐚 𝐊𝐚𝐫𝐭𝐡𝐢𝐤𝐞𝐲𝐚</a>⚡</p> <!-- Updated Developer Name -->
+    </footer>
+
+    <!-- Full Screen Loader GIF for background processing -->
+    <div class="full-screen">
+        <img src="assets/graphics/common/loader.gif" alt="Loader Image">
+    </div>    
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/create.js"></script> <!-- Step handling and processing JS -->
+    <script src="assets/js/common.js"></script> <!-- Shared functions -->
+    <script src="assets/vendor/stegnography.js"></script> <!-- Encoding library for hiding message -->
+    <script src="assets/vendor/sweetalert.min.js"></script> <!-- Alert popup library -->
+
+    <!-- Bootstrap JS for components functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

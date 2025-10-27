@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Encoding format for proper character rendering -->
+    <meta charset="UTF-8" />
+    
+    <!-- Enables responsive design for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser Tab Title -->
+    <title>𝐔𝐧𝐰𝐫𝐚𝐩 𝐚 𝐆𝐢𝐟𝐭𝐛𝐨𝐱</title>
+
+    <!-- Favicon Icon -->
+    <link rel='Shortcut Icon' type='image/x-icon' href='assets/graphics/common/title_logo.png'>
+
+    <!-- Bootstrap CSS for UI styling and layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom stylesheets -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/open.css">
+
+    <!-- SweetAlert styles (popup dialogs) -->
+    <link rel="stylesheet" href="assets/vendor/sweetalert.min.css">
+</head>
+
+<body class="background">
+    <!-- Hidden image used for steganography image processing -->
+    <img id="canvas" style="display:none; position:absolute; top:0px;"/>  
+    
+    <!-- Page Header Section -->
+    <div id="header">
+        <img id="headingImg" src="assets/graphics/open_page/heading.png" alt="Unwrap a Giftbox"/>
+    </div>
+
+    <!-- Main Body Wrapper -->
+    <div id="body">
+        <div class="card-container">
+
+            <!-- Stylish Card for 3-Step Unwrapping UI -->
+            <div class="card">
+
+                <!-- Top Illustration GIF -->
+                <img src="assets/graphics/common/open.gif" alt="Card Image">
+
+                <!-- Card Content Starts -->
+                <div class="card-content">
+
+                    <!-- ✅ Step Navigation Bar -->
+                    <div class="steps-nav">
+                        <!-- Step 1: Upload Encrypted Image -->
+                        <button id="step1" class="step-button" data-step-number="1" data-step-name="Load 🎁" onclick="showStep(1)">1</button>
+
+                        <!-- Step 2: Enter Secret Key -->
+                        <button id="step2" class="step-button" data-step-number="2" data-step-name="Pass 🔐" onclick="showStep(2)">2</button>
+
+                        <!-- Step 3: Reveal Hidden Secret Message -->
+                        <button id="step3" class="step-button" data-step-number="3" data-step-name="Info 📃" onclick="readMsg()">3</button>
+                    </div>
+
+                    <!-- ✅ STEP 1 CONTENT — Upload Giftbox Image -->
+                    <div id="content1" class="step-content">
+                        <div class="upload-box" id="uploadBox">
+                            <p>Drag & Drop your picture here or click to select</p>
+                            <input type="file" id="upload" class="upload-input" accept="image/*">
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <button class="btn prev-btn" onclick="home(1)">Home 🏡</button>
+                        <button class="btn nxt-btn" onclick="showStep(2)">Untie <i class="bi bi-arrow-right-circle"></i></button>
+                    </div>
+
+                    <!-- ✅ STEP 2 CONTENT — Enter Secret Code -->
+                    <div id="content2" class="step-content active">
+                        <img class="secret-code-image" src="assets/graphics/open_page/lock.png" alt="Secret code image">
+                        <input id="key" type="number" placeholder="Enter your secret code">
+
+                        <!-- Navigation Buttons -->
+                        <button class="btn prev-btn" onclick="showStep(1)">
+                            <i class="bi bi-arrow-left-circle"></i> Load 🎁
+                        </button>
+                        <button class="btn nxt-btn" onclick="readMsg()">
+                            Unwrap <i class="bi bi-arrow-right-circle"></i>
+                        </button>
+                    </div>
+
+                    <!-- ✅ STEP 3 CONTENT — Reveal Secret Message -->
+                    <div id="content3" class="step-content">
+                        <textarea id="message" rows="8"
+                                  placeholder="Your secret message will appear here!"
+                                  readonly></textarea>
+
+                        <!-- Navigation Buttons -->
+                        <button class="btn prev-btn" onclick="showStep(2)">
+                            <i class="bi bi-arrow-left-circle"></i> Pass 🔐
+                        </button>
+                        <button class="btn nxt-btn" onclick="home(1)">Home 🏡</button>
+                    </div>
+
+                </div>
+                <!-- End of Card Content -->
+
+            </div>
+
+        </div>
+    </div>
+
+  
+    <footer>
+        <p>Made with ❤️ by <a href="#" onclick="mypage()">𝐁𝐨𝐝𝐝𝐞𝐝𝐚 𝐊𝐚𝐫𝐭𝐡𝐢𝐤𝐞𝐲𝐚</a>⚡</p>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="assets/js/open.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <!-- Steganography script to extract hidden messages -->
+    <script src="assets/vendor/stegnography.js"></script>
+
+    <!-- SweetAlert popups -->
+    <script src="assets/vendor/sweetalert.min.js"></script>
+
+    <!-- Bootstrap JavaScript dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
