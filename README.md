@@ -41,25 +41,32 @@ The result? A digital gift that only the intended recipient can open, blending f
 <div align="center">
 
 ### The Gift Box Narrative
-![Gift Box Narrative](https://github.com/user-attachments/assets/20b59bcf-fff5-4a0b-a8a9-e71270436578)
+![WhatsApp Image 2025-10-26 at 20 21 26_874dd677](https://github.com/user-attachments/assets/e867f432-4248-4e98-9b80-f0c43f09bdea)
+
 
 ### Storing Message in the Gift Box
-![Storing Message](https://github.com/user-attachments/assets/c24a0f8d-9953-42b3-bd31-3202499fc5fe)
+![WhatsApp Image 2025-10-26 at 20 21 54_fd4abcc0](https://github.com/user-attachments/assets/d35d7672-09d7-4beb-8680-9bc45df2ba29)
 
 ### Tying the Knot
-![Tying the Knot](https://github.com/user-attachments/assets/702bb39f-0d51-4575-b375-1be0f147f2f1)
+![WhatsApp Image 2025-10-26 at 20 22 19_10b27b16](https://github.com/user-attachments/assets/d6455c6d-cf75-4710-a2df-1b8ea1b46933)
+
 
 ### Closing the Gift Box
-![Closing Gift Box](https://github.com/user-attachments/assets/a613c506-58df-4edc-8a30-861d8b37b957)
+![WhatsApp Image 2025-10-26 at 20 22 55_a1153ac6](https://github.com/user-attachments/assets/c43399d7-9e8c-4a87-ba63-4efe86b1f428)
+
 
 ### Untying and Opening the Gift Box
-![Opening Gift Box](https://github.com/user-attachments/assets/7d2f388b-16d9-4460-b39d-eeef156349dc)
+![WhatsApp Image 2025-10-26 at 20 24 28_12aa6b11](https://github.com/user-attachments/assets/5c18a13b-a91b-42c8-a573-e49e2b103d9e)
 
 ### Encryption Process
-![Encryption Process](https://github.com/user-attachments/assets/1fb0b425-3cfb-44be-b85b-434afef4ddfe)
+
+![WhatsApp Image 2025-10-26 at 20 25 09_57756bca](https://github.com/user-attachments/assets/d3206686-6560-4c69-be5e-d692e84d0c30)
+
+
 
 ### Decryption Process
-![Decryption Process](https://github.com/user-attachments/assets/dba7d7d9-1405-4e2f-895c-eefccc514d6f)
+
+![WhatsApp Image 2025-10-26 at 20 25 33_8a057480](https://github.com/user-attachments/assets/a89199b6-792f-4b48-8572-b1296c8eeba5)
 
 </div>
 
